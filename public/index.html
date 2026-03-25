@@ -145,34 +145,50 @@
       </div>
     </div>
 
-    <div class="hero__grid">
+    <!-- Photo: absolute right half, blended with gradients -->
+    <div class="hero__photo" aria-hidden="true">
+      <img src="foto-arquiteto.jpg" alt="" width="800" height="1100" fetchpriority="high" decoding="async" />
+    </div>
+
+    <!-- Main content: z-index above photo -->
+    <div class="hero__inner">
       <div class="hero__content">
-        <div class="hero__tag reveal">Arquitetura com precisão e cuidado</div>
+        <div class="hero__eyebrow reveal">
+          <span class="eyebrow-line"></span>
+          Arquitetura com precisão e cuidado
+        </div>
         <h1 class="hero__title reveal">
           Seu projeto,<br/>
-          <em>do início ao fim</em><br/>
-          sem complicação.
+          <em>do início<br/>ao fim</em><br/>
+          sem dor de cabeça.
         </h1>
         <p class="hero__sub reveal">
-          Projetos arquitetônicos personalizados com planejamento técnico completo,
-          tecnologia BIM e um acompanhamento próximo que te dá segurança em cada decisão.
+          Projetos arquitetônicos pensados para <strong>funcionar na prática</strong> —
+          respeitando seu orçamento, eliminando imprevistos e com acompanhamento
+          próximo do início ao fim.
         </p>
         <div class="hero__actions reveal">
-          <a href="#contato" class="btn btn--primary">Iniciar meu projeto</a>
-          <a href="#diferenciais" class="btn btn--ghost">Conheça o processo</a>
+          <a href="#contato" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Iniciar meu projeto
+          </a>
+          <a href="#sobre" class="btn btn--ghost">Conheça o arquiteto</a>
         </div>
-      </div>
 
-      <div class="hero__photo" aria-hidden="true">
-        <div class="hero__photo-wrap">
-          <img
-            src="foto-arquiteto.jpg"
-            alt="Arquiteto Tavares"
-            width="520"
-            height="720"
-            fetchpriority="high"
-            decoding="async"
-          />
+        <!-- Mini trust badges -->
+        <div class="hero__badges reveal">
+          <div class="hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            BIM Certificado
+          </div>
+          <div class="hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            100% Personalizado
+          </div>
+          <div class="hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Reg. CAU/BR
+          </div>
         </div>
       </div>
     </div>
@@ -182,6 +198,28 @@
       <div class="hero__scroll-line"></div>
     </div>
   </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Projeto Residencial</span><span class="marquee__sep">✦</span>
+      <span>Modelagem BIM</span><span class="marquee__sep">✦</span>
+      <span>Reforma &amp; Ampliação</span><span class="marquee__sep">✦</span>
+      <span>Projeto Executivo</span><span class="marquee__sep">✦</span>
+      <span>Energia Fotovoltaica</span><span class="marquee__sep">✦</span>
+      <span>Compatibilização Técnica</span><span class="marquee__sep">✦</span>
+      <span>Imagens 3D</span><span class="marquee__sep">✦</span>
+      <span>Projeto Legal</span><span class="marquee__sep">✦</span>
+      <span>Projeto Residencial</span><span class="marquee__sep">✦</span>
+      <span>Modelagem BIM</span><span class="marquee__sep">✦</span>
+      <span>Reforma &amp; Ampliação</span><span class="marquee__sep">✦</span>
+      <span>Projeto Executivo</span><span class="marquee__sep">✦</span>
+      <span>Energia Fotovoltaica</span><span class="marquee__sep">✦</span>
+      <span>Compatibilização Técnica</span><span class="marquee__sep">✦</span>
+      <span>Imagens 3D</span><span class="marquee__sep">✦</span>
+      <span>Projeto Legal</span><span class="marquee__sep">✦</span>
+    </div>
+  </div>
 
   <!-- METRICS STRIP -->
   <section class="metrics">
@@ -216,18 +254,22 @@
           <img
             src="foto-arquiteto.jpg"
             alt="Arquiteto Tavares — especialista em projetos residenciais e BIM"
-            width="480"
-            height="600"
-            loading="lazy"
-            decoding="async"
+            width="480" height="600"
+            loading="lazy" decoding="async"
           />
           <div class="sobre__img-badge">
             <span>CAU/BR</span>
             <span>Reg. ativo</span>
           </div>
         </div>
+        <!-- Floating quote card overlapping photo -->
+        <div class="sobre__quote-card">
+          <p>"Cada projeto começa com uma boa escuta."</p>
+        </div>
       </div>
+
       <div class="sobre__text reveal">
+        <div class="section-deco" aria-hidden="true">01</div>
         <div class="section-tag">Quem sou eu</div>
         <h2 class="section-title">
           Arquiteto focado em<br/>
@@ -235,23 +277,22 @@
         </h2>
         <p>
           Sou arquiteto e urbanista com formação sólida e paixão por transformar ideias em projetos
-          funcionais e bem resolvidos. Meu trabalho vai além do desenho — me envolvo em cada etapa
-          para garantir que o que foi planejado se torne realidade da forma mais organizada possível.
+          funcionais e bem resolvidos. Meu trabalho vai <span class="text-hl">além do desenho</span> — me envolvo
+          em cada etapa para garantir que o planejado se torne realidade da forma mais organizada possível.
         </p>
         <p>
           Utilizo metodologia <strong>BIM (Building Information Modeling)</strong> como base de todos
-          os projetos, o que me permite entregar mais precisão, detectar conflitos antes da obra e
-          oferecer uma visualização clara do resultado final para o cliente.
+          os projetos — mais precisão, detecção de conflitos antes da obra e uma visualização
+          clara do resultado final para você.
         </p>
         <p>
-          Acredito que um bom projeto começa com uma boa escuta. Por isso, priorizo o entendimento
-          completo das suas necessidades antes de riscar qualquer linha — porque o projeto ideal é
-          aquele que traduz exatamente quem você é e como você vive.
+          Acredito que um bom projeto começa com uma <span class="text-hl">boa escuta</span>. Porque o projeto ideal
+          é aquele que traduz exatamente quem você é e como você vive.
         </p>
         <div class="sobre__tags">
           <span>Arquitetura Residencial</span>
           <span>BIM</span>
-          <span>Reforma & Ampliação</span>
+          <span>Reforma &amp; Ampliação</span>
           <span>Projetos Complementares</span>
           <span>Energia Fotovoltaica</span>
         </div>
@@ -262,43 +303,48 @@
   <!-- PROPOSTA -->
   <section class="proposta" id="proposta">
     <div class="proposta__inner">
-      <div class="proposta__text reveal">
+      <div class="proposta__lead reveal">
         <div class="section-tag">Por que me contratar</div>
         <h2 class="section-title">
-          Construir ou reformar é um grande passo.<br/>
-          <em>Eu estou aqui para torná-lo mais seguro.</em>
+          Construir ou reformar é um grande investimento.<br/>
+          <em>Você merece segurança em cada passo.</em>
         </h2>
-        <p>
-          Se você está pensando em construir ou reformar, provavelmente já se perguntou:
-          <strong>"como evitar erros, gastos desnecessários e problemas na obra?"</strong>
-        </p>
-        <p>
-          É exatamente isso que eu resolvo. Desenvolvo projetos arquitetônicos pensados não só
-          para serem bonitos, mas para funcionarem na prática — respeitando seu orçamento,
-          evitando imprevistos e trazendo clareza em cada etapa.
-        </p>
-        <a href="#contato" class="btn btn--primary">Quero saber mais</a>
       </div>
-      <div class="proposta__visual reveal">
-        <div class="proposta__card-stack">
-          <div class="pcard pcard--back"></div>
-          <div class="pcard pcard--mid"></div>
-          <div class="pcard pcard--front">
-            <div class="pcard__icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 40V20L24 8L40 20V40H28V30H20V40H8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M20 30H28V40H20V30Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3>Seu projeto em boas mãos</h3>
-            <ul class="pcard__list">
-              <li>✔ Projeto personalizado</li>
-              <li>✔ Planejamento técnico</li>
-              <li>✔ Compatibilização completa</li>
-              <li>✔ Material para execução</li>
-              <li>✔ Tecnologia BIM</li>
-            </ul>
-            <div class="pcard__tag">Segurança do início ao fim</div>
+      <div class="proposta__body">
+        <div class="proposta__text reveal">
+          <p>
+            Se você está pensando em construir ou reformar, provavelmente já se perguntou:
+          </p>
+          <blockquote class="proposta__quote">
+            "Como evitar erros, gastos desnecessários<br/>e problemas na obra?"
+          </blockquote>
+          <p>
+            É exatamente isso que eu resolvo. Desenvolvo projetos pensados não só
+            para serem bonitos, mas para <span class="text-hl">funcionarem na prática</span> —
+            respeitando seu orçamento, evitando imprevistos e trazendo clareza em cada etapa.
+          </p>
+          <a href="#contato" class="btn btn--primary">Quero um projeto assim</a>
+        </div>
+        <div class="proposta__checklist reveal">
+          <div class="check-item">
+            <div class="check-item__icon">✔</div>
+            <div><strong>Projeto personalizado</strong><p>Desenvolvido a partir das suas necessidades e orçamento</p></div>
+          </div>
+          <div class="check-item">
+            <div class="check-item__icon">✔</div>
+            <div><strong>Planejamento técnico completo</strong><p>Reduz erros, retrabalho e economiza tempo e dinheiro</p></div>
+          </div>
+          <div class="check-item">
+            <div class="check-item__icon">✔</div>
+            <div><strong>Compatibilização entre projetos</strong><p>Arquitetônico + elétrico + hidráulico sem conflitos</p></div>
+          </div>
+          <div class="check-item">
+            <div class="check-item__icon">✔</div>
+            <div><strong>Material completo para execução</strong><p>Obra com menos improviso e mais controle</p></div>
+          </div>
+          <div class="check-item">
+            <div class="check-item__icon">✔</div>
+            <div><strong>Tecnologia BIM</strong><p>Mais precisão, visualização 3D e previsibilidade</p></div>
           </div>
         </div>
       </div>
@@ -309,6 +355,7 @@
   <section class="diferenciais" id="diferenciais">
     <div class="diferenciais__inner">
       <div class="section-header reveal">
+        <div class="section-deco" aria-hidden="true">02</div>
         <div class="section-tag">Meus diferenciais</div>
         <h2 class="section-title">O que torna meu trabalho único</h2>
         <p class="section-desc">
@@ -390,21 +437,11 @@
     </div>
   </section>
 
-  <!-- RESULTADO -->
-  <section class="resultado">
-    <div class="resultado__inner reveal">
-      <blockquote>
-        "Uma obra mais organizada, com menos surpresas, mais controle de custos
-        e um caminho muito mais tranquilo até o resultado final."
-      </blockquote>
-      <cite>— A promessa que faço a cada cliente</cite>
-    </div>
-  </section>
-
   <!-- SERVIÇOS -->
   <section class="servicos" id="servicos">
     <div class="servicos__inner">
       <div class="section-header reveal">
+        <div class="section-deco" aria-hidden="true">03</div>
         <div class="section-tag">Portfólio de serviços</div>
         <h2 class="section-title">Tudo que você precisa,<br/><em>em um só lugar</em></h2>
       </div>
@@ -492,6 +529,7 @@
   <section class="processo" id="processo">
     <div class="processo__inner">
       <div class="section-header reveal">
+        <div class="section-deco" aria-hidden="true">04</div>
         <div class="section-tag">Como funciona</div>
         <h2 class="section-title">Um processo claro,<br/><em>passo a passo</em></h2>
       </div>
@@ -566,6 +604,7 @@
   <section class="contato" id="contato">
     <div class="contato__inner">
       <div class="contato__text reveal">
+        <div class="section-deco" aria-hidden="true">05</div>
         <div class="section-tag">Contato</div>
         <h2 class="section-title">Vamos começar?</h2>
         <p>
