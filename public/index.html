@@ -1,9 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tavares Arquitetura — Projetos com Segurança e Precisão</title>
+
+  <!-- =============================================
+       SEO PRINCIPAL
+  ============================================= -->
+  <title>Arquiteto Tavares | Projetos Residenciais, Reformas e BIM</title>
+  <meta name="description" content="Arquiteto especializado em projetos residenciais, reformas, ampliações e compatibilização BIM. Projetos personalizados com segurança, clareza e tecnologia do início ao fim. Solicite uma consulta." />
+  <meta name="keywords" content="arquiteto, projeto arquitetônico residencial, projeto de reforma, projeto BIM, arquitetura residencial, projeto executivo, regularização de imóvel, compatibilização de projetos, projeto elétrico, projeto hidráulico, maquete 3D, arquitetura" />
+  <meta name="author" content="Tavares Arquitetura" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://arqtavares.com.br/" />
+
+  <!-- =============================================
+       OPEN GRAPH (WhatsApp, Facebook, LinkedIn)
+  ============================================= -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="pt_BR" />
+  <meta property="og:site_name"   content="Tavares Arquitetura" />
+  <meta property="og:url"         content="https://arqtavares.com.br/" />
+  <meta property="og:title"       content="Arquiteto Tavares | Projetos Residenciais, Reformas e BIM" />
+  <meta property="og:description" content="Projetos arquitetônicos personalizados com planejamento técnico completo, tecnologia BIM e acompanhamento próximo. Segurança do início ao fim." />
+  <meta property="og:image"       content="https://arqtavares.com.br/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="Tavares Arquitetura — Projetos residenciais com tecnologia BIM" />
+
+  <!-- =============================================
+       TWITTER / X CARD
+  ============================================= -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Arquiteto Tavares | Projetos Residenciais, Reformas e BIM" />
+  <meta name="twitter:description" content="Projetos arquitetônicos personalizados com planejamento técnico completo, tecnologia BIM e acompanhamento próximo." />
+  <meta name="twitter:image"       content="https://arqtavares.com.br/og-image.jpg" />
+
+  <!-- =============================================
+       STRUCTURED DATA — JSON-LD
+  ============================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://arqtavares.com.br/#business",
+        "name": "Tavares Arquitetura",
+        "description": "Escritório de arquitetura especializado em projetos residenciais, reformas, ampliações e compatibilização BIM. Atendimento personalizado com tecnologia e clareza.",
+        "url": "https://arqtavares.com.br",
+        "email": "contato@tavaresarq.com.br",
+        "image": "https://arqtavares.com.br/og-image.jpg",
+        "priceRange": "$$",
+        "currenciesAccepted": "BRL",
+        "paymentAccepted": "PIX, Transferência, Cartão",
+        "sameAs": [],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Arquitetura",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projeto arquitetônico residencial" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projeto de reforma e ampliação" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projeto executivo completo" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Compatibilização BIM" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projeto elétrico e hidráulico" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projeto fotovoltaico" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Regularização de imóvel" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria para construção e reforma" } }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://arqtavares.com.br/#arquiteto",
+        "name": "Tavares",
+        "jobTitle": "Arquiteto e Urbanista",
+        "worksFor": { "@id": "https://arqtavares.com.br/#business" },
+        "url": "https://arqtavares.com.br",
+        "image": "https://arqtavares.com.br/foto-arquiteto.jpg",
+        "knowsAbout": ["Arquitetura residencial", "BIM", "Projeto executivo", "Compatibilização de projetos", "Energia fotovoltaica"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://arqtavares.com.br/#website",
+        "url": "https://arqtavares.com.br",
+        "name": "Tavares Arquitetura",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://arqtavares.com.br/#business" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- =============================================
+       FAVICON (substitua pelos seus arquivos)
+  ============================================= -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -16,6 +112,7 @@
     <div class="nav__inner">
       <a href="#hero" class="nav__logo">TAVARES<span>ARQ</span></a>
       <ul class="nav__links">
+        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#diferenciais">Diferenciais</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#processo">Processo</a></li>
@@ -30,6 +127,7 @@
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
+      <li><a href="#sobre" class="mobile-link">Sobre</a></li>
       <li><a href="#diferenciais" class="mobile-link">Diferenciais</a></li>
       <li><a href="#servicos" class="mobile-link">Serviços</a></li>
       <li><a href="#processo" class="mobile-link">Processo</a></li>
@@ -94,6 +192,57 @@
       <div class="metric reveal">
         <span class="metric__number" data-count="360">0</span><span class="metric__symbol">°</span>
         <p>compatibilização técnica</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="sobre__inner">
+      <div class="sobre__visual reveal">
+        <div class="sobre__img-wrap">
+          <img
+            src="foto-arquiteto.jpg"
+            alt="Arquiteto Tavares — especialista em projetos residenciais e BIM"
+            width="480"
+            height="600"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="sobre__img-badge">
+            <span>CAU/BR</span>
+            <span>Reg. ativo</span>
+          </div>
+        </div>
+      </div>
+      <div class="sobre__text reveal">
+        <div class="section-tag">Quem sou eu</div>
+        <h2 class="section-title">
+          Arquiteto focado em<br/>
+          <em>resultado real para você</em>
+        </h2>
+        <p>
+          Sou arquiteto e urbanista com formação sólida e paixão por transformar ideias em projetos
+          funcionais e bem resolvidos. Meu trabalho vai além do desenho — me envolvo em cada etapa
+          para garantir que o que foi planejado se torne realidade da forma mais organizada possível.
+        </p>
+        <p>
+          Utilizo metodologia <strong>BIM (Building Information Modeling)</strong> como base de todos
+          os projetos, o que me permite entregar mais precisão, detectar conflitos antes da obra e
+          oferecer uma visualização clara do resultado final para o cliente.
+        </p>
+        <p>
+          Acredito que um bom projeto começa com uma boa escuta. Por isso, priorizo o entendimento
+          completo das suas necessidades antes de riscar qualquer linha — porque o projeto ideal é
+          aquele que traduz exatamente quem você é e como você vive.
+        </p>
+        <div class="sobre__tags">
+          <span>Arquitetura Residencial</span>
+          <span>BIM</span>
+          <span>Reforma & Ampliação</span>
+          <span>Projetos Complementares</span>
+          <span>Energia Fotovoltaica</span>
+        </div>
       </div>
     </div>
   </section>

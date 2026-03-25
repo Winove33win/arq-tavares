@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arqtavares.com.br/sitemap.xml

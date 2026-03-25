@@ -874,6 +874,106 @@ cite {
 }
 
 /* =========================================
+   SOBRE
+   ========================================= */
+.sobre {
+  padding: var(--section-pad);
+  background: var(--clr-bg-2);
+}
+.sobre__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(48px,7vw,100px);
+  align-items: center;
+}
+
+/* Imagem */
+.sobre__img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.sobre__img-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 55%,
+    rgba(10,10,10,0.7) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+.sobre__img-wrap img {
+  width: 100%;
+  height: clamp(400px, 60vh, 620px);
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+  filter: grayscale(15%);
+  transition: filter var(--trans);
+}
+.sobre__img-wrap:hover img { filter: grayscale(0%); }
+
+.sobre__img-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.sobre__img-badge span:first-child {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+}
+.sobre__img-badge span:last-child {
+  font-size: 0.75rem;
+  color: var(--clr-text-muted);
+}
+
+/* Texto */
+.sobre__text .section-title { margin-bottom: 1.4rem; }
+.sobre__text p {
+  color: var(--clr-text-muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.sobre__text strong { color: var(--clr-text); font-weight: 600; }
+
+.sobre__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1.8rem;
+}
+.sobre__tags span {
+  padding: 6px 14px;
+  background: var(--clr-accent-dim);
+  border: 1px solid rgba(201,169,110,0.2);
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--clr-accent);
+  letter-spacing: 0.03em;
+}
+
+/* =========================================
    CONTATO
    ========================================= */
 .contato {
@@ -1023,6 +1123,9 @@ cite {
 @media (max-width: 900px) {
   .nav__links { display: none; }
   .nav__burger { display: flex; }
+
+  .sobre__inner { grid-template-columns: 1fr; }
+  .sobre__img-wrap img { height: 420px; }
 
   .proposta__inner { grid-template-columns: 1fr; }
   .proposta__visual { display: none; }
