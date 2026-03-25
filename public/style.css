@@ -185,9 +185,10 @@ strong { color: var(--clr-text); font-weight: 600; }
   padding: 0 var(--pad-x);
   display: flex;
   align-items: center;
+  padding-top: 72px; /* nav offset so content sits at true visual center */
 }
 
-.hero__content { max-width: 580px; padding-top: 80px; }
+.hero__content { max-width: 580px; }
 
 .hero__eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
@@ -266,7 +267,7 @@ strong { color: var(--clr-text); font-weight: 600; }
 .sobre { padding: var(--pad-y) var(--pad-x); background: var(--clr-bg-2); }
 .sobre__inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(48px,7vw,96px); align-items: center; }
 
-.sobre__visual { position: relative; }
+.sobre__visual { position: relative; padding-bottom: 32px; }
 
 .sobre__img-wrap { position: relative; }
 .sobre__img-wrap img {
@@ -297,7 +298,7 @@ strong { color: var(--clr-text); font-weight: 600; }
 .sobre__img-badge span:last-child { font-size: 0.72rem; color: var(--clr-muted); }
 
 .sobre__quote-card {
-  position: absolute; bottom: -24px; right: -24px; z-index: 3;
+  position: absolute; bottom: 8px; right: -16px; z-index: 3;
   background: var(--clr-surface);
   border: 1px solid rgba(201,169,110,0.2);
   border-radius: var(--radius);
@@ -307,7 +308,7 @@ strong { color: var(--clr-text); font-weight: 600; }
 }
 .sobre__quote-card p { font-family: var(--ff-serif); font-size: 0.95rem; font-style: italic; color: var(--clr-text); line-height: 1.5; }
 
-.sobre__text { position: relative; }
+.sobre__text { position: relative; padding-top: 32px; }
 .sobre__text .section-title { margin-bottom: 1.4rem; }
 .sobre__text p { color: var(--clr-muted); font-size: 1rem; line-height: 1.75; margin-bottom: 1rem; }
 .sobre__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.8rem; }
